@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <style>
+      
+
+    </style>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+
+        <div class="registration">
+
+            <div class="registration__container">
+
+                <div class="registration__heading">
+                    Registration
+                </div>
+
+                <div class="registration__toggle">
+                    <button class="toggle-btn" data-form="tutor-form">Tutor</button>
+                    <button class="toggle-btn" data-form="student-form">Student</button>
+                </div>
+                
+                <form class="registration__form tutor-registration__form" data-form="tutor-form" method="post" action="api/user/registration">
+                  
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="tel" name="telnum" placeholder="Telephone Number" maxlength="9" required>
+                    <select name="subject" required
+                    style="border: 2px solid rgb(0, 0, 0);
+                            border-radius: 12px;
+                            font-size: 12px;
+                            padding: 5px;
+                            width: 400px;
+                            height: 44px;
+                            box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.492);">
+                        <option value="1">Math</option>
+                        <option value="2">Physics</option>
+                        <option value="3">English</option>
+                        <option value="4">Chemistry</option>
+                        <option value="5">Biology</option>
+                        <option value="6">History</option>
+          
+
+
+                    </select>
+                    <input type="hidden" value="tutor" name="role">
+                    <button type="submit">Tutor registration</button>
+                </form>
+                
+                <form class="registration__form student-registration__form" data-form="student-form" method="post" action="api/user/registration">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="tel" name="telnum" placeholder="Telephone Number" required>
+                    <input type="hidden" value="student" name="role">
+                    <button type="submit">Student registration</button>
+                </form>
+                
+                
+                
+
+            </div>
+
+        </div>
+
+    </main>
+    <footer></footer>
+    <script src="registration.js"></script>
+</body>
+</html>

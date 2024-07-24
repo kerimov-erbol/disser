@@ -1,0 +1,52 @@
+.user-cabinet-info{
+    padding: 15px;
+}
+
+
+
+.user-cabinet-cours__container{
+    background-color: rgb(255, 202, 127);
+    padding: 20px;
+    width: 1100px;
+    margin: 0 auto; 
+    border: 2px solid black;
+    border-radius: 12px;
+}
+.user-cabinet-cours__list{
+    margin-top: 20px
+    ;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.user-cabinet-cours__item{
+    
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+.user-cabinet-cours-tutor{
+   
+    width: 100px;
+    padding: 3px;
+    border-bottom: 1px solid black;
+    border-radius: 4px;
+}
+
+.user-cabinet-cours-staus{
+    width: 150px;
+    border-bottom: 1px solid black;
+    border-radius: 4px;
+}
+
+.user-cabinet-cours-groupname{
+    width: 150px;
+    border-bottom: 1px solid black;
+    border-radius: 4px;
+
+}
+.user-cabinet-cours__day{
+    width: 50px;
+    border-bottom: 1px solid black;
+    border-radius: 4px;
+}

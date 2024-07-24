@@ -1,0 +1,28 @@
+.login{
+    margin-top: 250px;
+    display: flex;
+    justify-content:center ;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        gap: 10px;
+        width: 700px;
+        margin: 0 auto;
+        border: 2px solid black;
+        border-radius: 12px;
+        
+
+        
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+    }
+}

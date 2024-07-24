@@ -1,0 +1,42 @@
+.editinfo__form{
+    padding: 40px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+justify-content: center;
+align-items: center;
+
+
+}
+
+
+
+
+.editinfo-popup {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    transition: display 2s;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.editinfo-overlay{
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+    transition: display 2s;
+}

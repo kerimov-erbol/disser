@@ -1,0 +1,68 @@
+
+.student-list-popup {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    transition: display 2s;
+    border: 2px solid black;
+    border-radius: 12px;
+    width: 600px;
+    min-height: 300px;
+}
+
+.student-list-overlay{
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+    transition: display 2s;
+}
+
+.student-list__container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.student-list-item{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.student-list__btn-wrap{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.student-answer-button-no{
+    margin: 5px;
+    background: rgb(255, 140, 140);
+    width: 70px;
+    
+
+}
+.student-answer-button-yes{
+    margin: 5px;
+    background: rgb(102, 247, 153);
+    width: 70px;
+
+}
+
+.student-is-acsepted{
+
+}

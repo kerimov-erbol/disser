@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZlearn</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header__container">
+                <a href="index.html" class="header__logo">EZlearn</a>
+                <div class="header__link-list-inter">
+                    <div class="header__link-list-inter-item-wrap tutor-cabinet-link">  <a class="header__link-list-inter-item loged-in-tutor" href="tutor-cabinet.html">Tutor cabinet</a></div>
+                    <div  class="header__link-list-inter-item-wrap">  <a class="header__link-list-inter-item logoutBtn" href="#">Logut</a></div>
+                   </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="tutor-info">
+                <div class="tutor-info__container">
+                    
+                    <div class="tutor-info__info">
+                        <div class="tutor-info__img-wrap" href="tutor.html" class="tutor-section__link">
+                            <img class="tutor-info__img" width="150px" height="150px" style="object-fit: cover;" src="" alt="">
+                        </div>
+                        <div class="tutor-info__tutor-info-list">
+                            <div class="tutor-info__info-info-item  tutor-section__info-item-name">
+                            </div>
+                            <div class="tutor-section__tutor-item-separator">
+                                
+                            </div>
+                            <div class="tutor-info__info-info-item tutor-section__info-item-subjet">
+                            </div>
+                            <div class="tutor-info__info-info-item tutor-section__info-item-experience">
+                                Expirience:   3 Years of teaching
+                            </div>
+                            <div class="tutor-info__info-info-item tutor-section__info-item-telno">
+                                Telephone: 995760356
+                            </div>
+                            <div class="tutor-info__info-info-item tutor-section__info-item-education">
+                                Education:   CIKWB MDIS
+                            </div>
+                            <div class="tutor-section__tutor-item-separator">
+                                
+                            </div>
+                            <div class="tutor-info__info-info-item">
+                               About:
+                            </div>
+                            <div class="tutor-info__info-info-item  tutor-section__info-item-about">
+                                Teachers play a crucial role in shaping the minds and futures of their students. They are not just instructors but also mentors, role models, and guides. A teacher’s influence extends beyond the classroom, impacting students' personal growth and development. Effective teachers inspire curiosity, foster a love for learning, and help students develop critical thinking skills. They create a positive learning environment where students feel safe, respected, and motivated. By understanding each student’s unique needs and abilities, teachers can tailor their approaches to ensure every student can succeed. The role of a teacher is dynamic and ever-evolving, requiring continuous learning and adaptation.
+                            </div>
+                        </div>
+                        <div class="tutor-info__edit-page">
+                            <button class="tutor-info__btn">Edit</button>
+                        </div>
+            
+                            <button class="add-grup-btn header__login-link tutor-info__btn">Add group</button>
+                            
+        
+                         
+                    </div>
+
+
+
+                    
+                 
+                    <div class="tutor-info__info-courses-list">
+                    
+                        <div class="tutor-info__info-courses-item">
+                            <div class="tutor-info__info-courses-heading">
+                                group name
+                            </div>
+                            <div class="tutor-info__info-courses-body">
+                                <div class="tutor-info__info-courses-name"></div>
+                                <div class="tutor-info__info-courses-schedule">
+                                    Schedule: <br>
+                                    Monday 3.30-6.00 <br>
+                                    Tusday  3.30-6.-00<br>
+                                    Wensday 4.00-7.00
+                                </div>
+                                <div class="tutor-info__info-courses-adress">
+                                    Adress: Mirabad 1 
+                                </div>
+                                <div class="tutor-info__info-courses-all-list">
+                                    Students: 14 
+                                </div>
+                                <div class="tutor-info__info-courses-waitng-list">
+                                    Waiteing: 12 
+                                </div>
+                            </div>
+                            <div class="tutor-info__btn-wrap">
+                                <button class="tutor-info__btn">Edit</button>
+                                <button class="tutor-info__btn tutor-info__students-display">Studnets</button>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer></footer>
+
+    <div class="visually-hidden new-group-overlay">
+    </div>
+    <section class="visually-hidden new-group-popup">
+        <div class="new-grup__container">
+           
+            <form class="new-grup__form" method="post" action="">
+                <input class="new-grup__input" type="text" name="groupname" required placeholder="Grop name">
+                <input class="new-grup__input" type="text" name="description" required placeholder="About group">
+                <input class="new-grup__input" type="number" name="price" required placeholder="Price">
+                <input class="new-grup__input" type="tel" name="adress" required placeholder="Adress">
+
+                <div class="new-grup__week">
+                    <div class="new-grup__wrap">
+                        <label class="new-grup__week-lable"for="mon">Monday</label>
+                        <input class="new-grup__week-input" type="time" id="mon" name="mon">
+    
+                    </div>
+                    <div  class="new-grup__wrap">
+                        <label class="new-grup__week-lable" for="tue">Tusday </label>
+                    <input class="new-grup__week-input" type="time" id="tue" name="tue">
+    
+                    </div>
+                    <div class="new_grup__separator"></div>
+                    <div  class="new-grup__wrap">
+                        <label class="new-grup__week-lable" for="wen">Wensday </label>
+                    <input class="new-grup__week-input" type="time" id="wen" name="wen">
+    
+                        
+                    </div>
+                    <div  class="new-grup__wrap">
+                        <label class="new-grup__week-lable" for="wen">Thursday </label>
+                    <input class="new-grup__week-input" type="time" id="wen" name="thur">
+    
+                    </div>
+                    <div  class="new-grup__wrap">
+                         
+                    <label class="new-grup__week-lable" for="wen">Friday </label>
+                    <input class="new-grup__week-input" type="time" id="wen" name="fri">
+    
+                        
+                    </div>
+                    <div  class="new-grup__wrap">
+                        
+                    <label class="new-grup__week-lable" for="wen">Saturday</label>
+                    <input class="new-grup__week-input" type="time" id="wen" name="sat">
+    
+                    </div>
+                    <div  class="new-grup__wrap">
+                        <label  class="new-grup__week-lable" for="wen">Sundaу</label>
+                        <input class="new-grup__week-input" type="time" id="wen" name="sun">      
+                        
+                    </div>
+
+                    
+                    
+                   
+                </div>  
+                <button type="submit">Add group</button>
+            </form>
+            
+        </div>
+    </section>
+
+
+
+
+
+    <div class="visually-hidden edit-group-overlay">
+    </div>
+    <section class="visually-hidden edit-group-popup">
+        <div class="edit-group__container">
+           
+         
+        </div>
+    </section>
+
+
+    <div class="visually-hidden student-list-overlay">
+    </div>
+    <section class="visually-hidden student-list-popup">
+        <div class="student-list__container">
+
+            student list
+           
+         
+        </div>
+    </section>
+
+
+
+    <div class="visually-hidden editinfo-overlay">
+    </div>
+    <section class="visually-hidden editinfo-popup">
+        <div class="editinfo-popup__container">
+           
+            <form class="editinfo__form" enctype="multipart/form-data" method="post" action="" >
+                <p>Your name</p>
+                <input class="editinfo__input" type="text" name="name">
+
+                <p>Selet image</p>
+                <input class="editinfo__input" type="file" name="img" accept="image/*">
+                <p>Your experience</p>
+                <input class="editinfo__input" type="text" name="experience">
+                
+                <p>Your education</p>
+                <input class="editinfo__input" type="text" name="education">
+
+                <p>About yourself</p>
+                <input class="editinfo__input" type="text" name="about" >
+               
+                <button type="submit">Update profile</button>
+            </form>
+            
+        </div>
+    </section>
+
+
+
+    <div class="popup-overlay-custom-class" style="z-index: 2;">
+        <div class="popup-content-container-class">
+            <p>Are you sure you want to delete this group?</p>
+            <button class="btn-confirm-delete-class">Yes</button>
+            <button class="btn-cancel-delete-class">No</button>
+        </div>
+    </div>
+
+
+    <script src="js/tutor-cabiner.js"></script>
+</body>
+</html>

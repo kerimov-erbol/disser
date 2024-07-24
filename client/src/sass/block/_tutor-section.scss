@@ -1,0 +1,126 @@
+@use "../abstract-index" as *;
+
+.tutor-section{
+    &__container{
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+    &__tutor-list{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+       
+
+        
+    }
+    &__tutor-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        background-color: white;
+        padding: 30px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 2px solid #000000; /* Thick purple border */
+        box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.492);
+        border-radius: 12px; /* Rounded corners */
+        background-color: #77CBFA
+    }
+    &__tutor-item:hover {
+        transform: translateY(-5px);
+        border-color: black;
+        
+        box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.492);}
+
+    &__tutor-item-img-link{
+        flex-shrink: 0;
+        width: 150px;
+        height: 150px;
+       
+    }
+    &__img{
+        border: 2px solid black;
+        width: 150px;
+        height: 150px;
+        border-radius: 50px;
+        box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.492);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    &__img:hover {
+        transform: translateY(-5px);
+        border-color: black;
+        
+        box-shadow: 8px 8px 1px rgba(0, 0, 0, 0.492);}
+
+
+
+    &__tutor-item-info{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex-grow: 1;
+    }
+
+    &__tutor-item-separator{
+        width: 100%;
+        height: 2px;
+        background-color: #000000;
+    }
+    &__info-item-name{
+        font-size: 25px;
+    }
+    &__info-item-subject{
+        font-size: 14px;
+        display: flex ;
+        align-items: center;
+        gap: 6px;
+    }
+    &__info-item-about{
+    }
+
+
+    &__filter {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        // padding: 20px; /* Spacing around the whole filter section */
+
+        border-radius: 12px; /* Rounded corners */
+        // background-color: #ffffff;
+       
+    }
+    
+    &__filter-list {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); /* Creates three columns */
+        gap: 15px; /* Space between the grid items */
+        padding: 10px; /* Padding inside the grid container */
+    }
+    
+    &__filter-item {
+        // background-color: white;
+        background-color: #80e9ef;
+
+        text-align: center; /* Centers text horizontally */
+        padding: 12px 20px; /* Padding inside each item */
+
+        border: 2px solid #000000; /* Rounded corners for each item */
+        border-radius: 12px;
+
+        box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.492);
+        transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+       
+    }
+    
+    &__filter-item:hover {
+        
+        box-shadow: 9px 9px 1px rgba(0, 0, 0, 0.492);
+        transform: translateY(-5px); /* Moves the item slightly up when hovered */
+        
+    }
+}
+
+
+
+
+

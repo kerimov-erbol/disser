@@ -1,0 +1,108 @@
+@use "../abstract-index" as *;
+
+html {
+
+    scroll-behavior: smooth;
+    // font-family: 'Inter', sans-serif;
+}
+body{
+  min-width: 800px;
+  font-family: 'Arial', sans-serif; /* Arial as a primary option, sans-serif as a fallback */
+  font-size: 15px; /* Adjust size as needed */
+  // font-weight: 600;
+  color: #000; /* Black color for the text */
+  // background-color:rgb(255, 180, 180);
+  // background-color:rgb(255, 205, 205);
+  // background-color: #80C1EF;
+  // background-color: rgb(230, 185, 185);
+  background-color: #e0f7fa;
+  // background-color: #eda5a5;
+  background-color: rgba(0, 0, 0, 0.059);
+
+
+}
+button{
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+// 
+// 
+
+// @use "../abstract-index" as *;
+// .location{
+//     width: 340px;
+//     margin: 0 auto;
+// }
+
+
+// @include for-desktop{
+
+//     .location{
+//         width: 1150px;
+//     }
+// }
+
+
+
+// 
+
+
+
+// container provides space for sectionBLOCK + buffer
+// .container{
+//     width: 100%;
+
+
+// }
+// .container--balck{
+//     background-color: #18252F;
+// }
+
+// @include for-desktop{
+//     .container{
+//         max-width: 100%;
+//         min-width: 1100px;
+
+//     }
+// }
+
+
+
+
+// /* Base font size for mobile users */
+// body {
+//     font-size: 14px;
+// }
+  
+// /* Increase font size for tablets */
+// @media (min-width: 768px) {
+// body {
+//     font-size: 16px;
+// }
+// }
+
+// /* Larger font size for desktop screens */
+// @media (min-width: 1200px) {
+// body {
+//     font-size: 18px;
+// }
+// }
+
+
+

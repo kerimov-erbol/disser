@@ -1,0 +1,68 @@
+
+@mixin for-mobile {
+    @media (max-width: (600px)) {
+      @content;
+    }
+}
+
+@mixin for-tablet {
+    @media (max-width: (800px)) {
+      @content;
+    }
+}
+
+@mixin font-face($font-family, $url, $weight, $style) {
+    @font-face {
+      font-family: "#{$font-family}";
+      src: url('../fonts/#{$url}.woff2') format("woff2");
+      font-weight: #{$weight};
+      font-display: swap;
+      font-style: $style;
+    }
+  }
+
+// // Small devices (landscape phones, 576px and up) 
+
+// // @media (width>=576px) {
+// //     .container{
+// //         outline: 1px dashed rgb(0, 255, 128);
+// //         background-color: blanchedalmond;
+// //         width: 550px;
+// //     }
+// // }
+
+// // Medium devices (tablets, 768px and up) 
+
+// // @media (min-width: 768px) {
+// //     .container{
+// //         outline: 1px dashed rgb(0, 255, 128);
+// //         background-color: rgb(247, 255, 19);
+// //         width: 800px;
+// //     }
+// // }
+
+// // Large devices (desktops, 992px and up) 
+
+// // @media (min-width: 992px) {
+// //     .container{
+// //         outline: 1px dashed rgb(0, 255, 128);
+// //         background-color: red;
+// //         width: 1000px;
+// //     }
+// // }
+
+// /* Extra large devices (large desktops, 1200px and up) */
+// @media (min-width: 1200px) {
+//     .container{
+//         outline: 1px dashed rgb(0, 255, 128);
+//         background-color: blue;
+//         width: 1150px;
+//     }
+// }
+
+/* Base font size for mobile users */
+
+
+
+
+
